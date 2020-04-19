@@ -1,0 +1,938 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		260062F20AA60DB25710C884 /* Pods_TiketTestAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9D73D026F1271D369F773C7 /* Pods_TiketTestAppTests.framework */; };
+		3CA018B42DCB95AB3554F8D6 /* Pods_TiketTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0AB748FFD355D395C15144 /* Pods_TiketTestApp.framework */; };
+		5CA73917244C8E55007E8487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA73916244C8E55007E8487 /* AppDelegate.swift */; };
+		5CA73919244C8E55007E8487 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA73918244C8E55007E8487 /* SceneDelegate.swift */; };
+		5CA7391B244C8E55007E8487 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA7391A244C8E55007E8487 /* ViewController.swift */; };
+		5CA7391E244C8E55007E8487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA7391C244C8E55007E8487 /* Main.storyboard */; };
+		5CA73920244C8E56007E8487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA7391F244C8E56007E8487 /* Assets.xcassets */; };
+		5CA73923244C8E56007E8487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA73921244C8E56007E8487 /* LaunchScreen.storyboard */; };
+		5CA7392E244C8E56007E8487 /* TiketTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA7392D244C8E56007E8487 /* TiketTestAppTests.swift */; };
+		5CA73939244C8E56007E8487 /* TiketTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA73938244C8E56007E8487 /* TiketTestAppUITests.swift */; };
+		5CA73956244C9058007E8487 /* UIString+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA73949244C9058007E8487 /* UIString+Extension.swift */; };
+		5CA73957244C9058007E8487 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA7394A244C9058007E8487 /* UIViewController+Extensions.swift */; };
+		5CA73958244C9058007E8487 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA7394B244C9058007E8487 /* UILabel+Extension.swift */; };
+		5CA73959244C9058007E8487 /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA7394C244C9058007E8487 /* UIDevice+Extensions.swift */; };
+		5CA7395A244C9058007E8487 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA7394E244C9058007E8487 /* Reachability.swift */; };
+		5CA7395B244C9058007E8487 /* PreferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA7394F244C9058007E8487 /* PreferenceManager.swift */; };
+		5CA7395C244C9058007E8487 /* KeyedValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA73950244C9058007E8487 /* KeyedValue.swift */; };
+		5CA7395D244C9058007E8487 /* CoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA73952244C9058007E8487 /* CoreService.swift */; };
+		5CA7395E244C9058007E8487 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA73953244C9058007E8487 /* BaseInteractor.swift */; };
+		5CA7395F244C9058007E8487 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA73954244C9058007E8487 /* Core.swift */; };
+		5CA73970244C9606007E8487 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA7396E244C9606007E8487 /* ItemCollectionViewCell.swift */; };
+		5CA73971244C9606007E8487 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA7396F244C9606007E8487 /* ItemCollectionViewCell.xib */; };
+		5CA73973244C960D007E8487 /* ItemInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA73972244C960D007E8487 /* ItemInteractor.swift */; };
+		5CA73975244C9614007E8487 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA73974244C9614007E8487 /* Item.swift */; };
+		5CA73977244C961B007E8487 /* ItemsCoreService+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA73976244C961B007E8487 /* ItemsCoreService+Extensions.swift */; };
+		5CA7397A244CACC5007E8487 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA73978244CACC5007E8487 /* MenuCollectionViewCell.swift */; };
+		5CA7397B244CACC5007E8487 /* MenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CA73979244CACC5007E8487 /* MenuCollectionViewCell.xib */; };
+		5CA7397E244CB2E3007E8487 /* DetailHeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA7397D244CB2E2007E8487 /* DetailHeroViewController.swift */; };
+		5CA73980244CB2EA007E8487 /* DetailHero.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA7397F244CB2EA007E8487 /* DetailHero.storyboard */; };
+		5CA73983244CD47F007E8487 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA73982244CD47F007E8487 /* R.generated.swift */; };
+		F73A0DF9C760C9EF2809CC75 /* Pods_TiketTestApp_TiketTestAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 748D2EAEB642A0158CFB9D3F /* Pods_TiketTestApp_TiketTestAppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CA7392A244C8E56007E8487 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CA7390B244C8E55007E8487 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CA73912244C8E55007E8487;
+			remoteInfo = TiketTestApp;
+		};
+		5CA73935244C8E56007E8487 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CA7390B244C8E55007E8487 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CA73912244C8E55007E8487;
+			remoteInfo = TiketTestApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E1E29DFE88E834D240073F9 /* Pods-TiketTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiketTestApp.release.xcconfig"; path = "Target Support Files/Pods-TiketTestApp/Pods-TiketTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		180D85D84EAF043569E1BF87 /* Pods-TiketTestApp-TiketTestAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiketTestApp-TiketTestAppUITests.release.xcconfig"; path = "Target Support Files/Pods-TiketTestApp-TiketTestAppUITests/Pods-TiketTestApp-TiketTestAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3D6A52E52DE442FC598B3323 /* Pods-TiketTestApp-TiketTestAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiketTestApp-TiketTestAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-TiketTestApp-TiketTestAppUITests/Pods-TiketTestApp-TiketTestAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5CA73913244C8E55007E8487 /* TiketTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TiketTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CA73916244C8E55007E8487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5CA73918244C8E55007E8487 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5CA7391A244C8E55007E8487 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5CA7391D244C8E55007E8487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CA7391F244C8E56007E8487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CA73922244C8E56007E8487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CA73924244C8E56007E8487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CA73929244C8E56007E8487 /* TiketTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiketTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CA7392D244C8E56007E8487 /* TiketTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiketTestAppTests.swift; sourceTree = "<group>"; };
+		5CA7392F244C8E56007E8487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CA73934244C8E56007E8487 /* TiketTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiketTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CA73938244C8E56007E8487 /* TiketTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiketTestAppUITests.swift; sourceTree = "<group>"; };
+		5CA7393A244C8E56007E8487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CA73949244C9058007E8487 /* UIString+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIString+Extension.swift"; sourceTree = "<group>"; };
+		5CA7394A244C9058007E8487 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		5CA7394B244C9058007E8487 /* UILabel+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		5CA7394C244C9058007E8487 /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extensions.swift"; sourceTree = "<group>"; };
+		5CA7394E244C9058007E8487 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		5CA7394F244C9058007E8487 /* PreferenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceManager.swift; sourceTree = "<group>"; };
+		5CA73950244C9058007E8487 /* KeyedValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyedValue.swift; sourceTree = "<group>"; };
+		5CA73952244C9058007E8487 /* CoreService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreService.swift; sourceTree = "<group>"; };
+		5CA73953244C9058007E8487 /* BaseInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
+		5CA73954244C9058007E8487 /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		5CA7396E244C9606007E8487 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		5CA7396F244C9606007E8487 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		5CA73972244C960D007E8487 /* ItemInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemInteractor.swift; sourceTree = "<group>"; };
+		5CA73974244C9614007E8487 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		5CA73976244C961B007E8487 /* ItemsCoreService+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemsCoreService+Extensions.swift"; sourceTree = "<group>"; };
+		5CA73978244CACC5007E8487 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		5CA73979244CACC5007E8487 /* MenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		5CA7397D244CB2E2007E8487 /* DetailHeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeroViewController.swift; sourceTree = "<group>"; };
+		5CA7397F244CB2EA007E8487 /* DetailHero.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailHero.storyboard; sourceTree = "<group>"; };
+		5CA73982244CD47F007E8487 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		748D2EAEB642A0158CFB9D3F /* Pods_TiketTestApp_TiketTestAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiketTestApp_TiketTestAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E654CDD5E25B09E10A659FF /* Pods-TiketTestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiketTestAppTests.release.xcconfig"; path = "Target Support Files/Pods-TiketTestAppTests/Pods-TiketTestAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D0AB748FFD355D395C15144 /* Pods_TiketTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiketTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3AF2D68573944C67AAAD49C /* Pods-TiketTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiketTestApp.debug.xcconfig"; path = "Target Support Files/Pods-TiketTestApp/Pods-TiketTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E6AAB840428B867DB40C2CB7 /* Pods-TiketTestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiketTestAppTests.debug.xcconfig"; path = "Target Support Files/Pods-TiketTestAppTests/Pods-TiketTestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9D73D026F1271D369F773C7 /* Pods_TiketTestAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiketTestAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CA73910244C8E55007E8487 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CA018B42DCB95AB3554F8D6 /* Pods_TiketTestApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CA73926244C8E56007E8487 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				260062F20AA60DB25710C884 /* Pods_TiketTestAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CA73931244C8E56007E8487 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F73A0DF9C760C9EF2809CC75 /* Pods_TiketTestApp_TiketTestAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A207E1CFD2F49610642F74D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D0AB748FFD355D395C15144 /* Pods_TiketTestApp.framework */,
+				748D2EAEB642A0158CFB9D3F /* Pods_TiketTestApp_TiketTestAppUITests.framework */,
+				E9D73D026F1271D369F773C7 /* Pods_TiketTestAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		346EAE3D107A0EA51EDD2DCA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3AF2D68573944C67AAAD49C /* Pods-TiketTestApp.debug.xcconfig */,
+				0E1E29DFE88E834D240073F9 /* Pods-TiketTestApp.release.xcconfig */,
+				3D6A52E52DE442FC598B3323 /* Pods-TiketTestApp-TiketTestAppUITests.debug.xcconfig */,
+				180D85D84EAF043569E1BF87 /* Pods-TiketTestApp-TiketTestAppUITests.release.xcconfig */,
+				E6AAB840428B867DB40C2CB7 /* Pods-TiketTestAppTests.debug.xcconfig */,
+				7E654CDD5E25B09E10A659FF /* Pods-TiketTestAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5CA7390A244C8E55007E8487 = {
+			isa = PBXGroup;
+			children = (
+				5CA73915244C8E55007E8487 /* TiketTestApp */,
+				5CA7392C244C8E56007E8487 /* TiketTestAppTests */,
+				5CA73937244C8E56007E8487 /* TiketTestAppUITests */,
+				5CA73914244C8E55007E8487 /* Products */,
+				346EAE3D107A0EA51EDD2DCA /* Pods */,
+				1A207E1CFD2F49610642F74D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5CA73914244C8E55007E8487 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CA73913244C8E55007E8487 /* TiketTestApp.app */,
+				5CA73929244C8E56007E8487 /* TiketTestAppTests.xctest */,
+				5CA73934244C8E56007E8487 /* TiketTestAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CA73915244C8E55007E8487 /* TiketTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				5CA73951244C9058007E8487 /* Core */,
+				5CA73948244C9058007E8487 /* Extension */,
+				5CA7394D244C9058007E8487 /* Helper */,
+				5CA73955244C9058007E8487 /* Resource */,
+				5CA73946244C8E8A007E8487 /* Controllers */,
+				5CA73916244C8E55007E8487 /* AppDelegate.swift */,
+				5CA73918244C8E55007E8487 /* SceneDelegate.swift */,
+				5CA7391F244C8E56007E8487 /* Assets.xcassets */,
+				5CA73921244C8E56007E8487 /* LaunchScreen.storyboard */,
+				5CA73924244C8E56007E8487 /* Info.plist */,
+			);
+			path = TiketTestApp;
+			sourceTree = "<group>";
+		};
+		5CA7392C244C8E56007E8487 /* TiketTestAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CA7392D244C8E56007E8487 /* TiketTestAppTests.swift */,
+				5CA7392F244C8E56007E8487 /* Info.plist */,
+			);
+			path = TiketTestAppTests;
+			sourceTree = "<group>";
+		};
+		5CA73937244C8E56007E8487 /* TiketTestAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5CA73938244C8E56007E8487 /* TiketTestAppUITests.swift */,
+				5CA7393A244C8E56007E8487 /* Info.plist */,
+			);
+			path = TiketTestAppUITests;
+			sourceTree = "<group>";
+		};
+		5CA73946244C8E8A007E8487 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5CA7397C244CB2C9007E8487 /* DetailHero */,
+				5CA73947244C8EA5007E8487 /* Main */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5CA73947244C8EA5007E8487 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5CA73962244C9072007E8487 /* Cell */,
+				5CA73965244C9072007E8487 /* Interactor */,
+				5CA73960244C9071007E8487 /* Model */,
+				5CA73967244C9072007E8487 /* Service */,
+				5CA7391A244C8E55007E8487 /* ViewController.swift */,
+				5CA7391C244C8E55007E8487 /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5CA73948244C9058007E8487 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				5CA73949244C9058007E8487 /* UIString+Extension.swift */,
+				5CA7394A244C9058007E8487 /* UIViewController+Extensions.swift */,
+				5CA7394B244C9058007E8487 /* UILabel+Extension.swift */,
+				5CA7394C244C9058007E8487 /* UIDevice+Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		5CA7394D244C9058007E8487 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5CA7394E244C9058007E8487 /* Reachability.swift */,
+				5CA7394F244C9058007E8487 /* PreferenceManager.swift */,
+				5CA73950244C9058007E8487 /* KeyedValue.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5CA73951244C9058007E8487 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5CA73952244C9058007E8487 /* CoreService.swift */,
+				5CA73953244C9058007E8487 /* BaseInteractor.swift */,
+				5CA73954244C9058007E8487 /* Core.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5CA73955244C9058007E8487 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5CA73982244CD47F007E8487 /* R.generated.swift */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5CA73960244C9071007E8487 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CA73974244C9614007E8487 /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5CA73962244C9072007E8487 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5CA7396E244C9606007E8487 /* ItemCollectionViewCell.swift */,
+				5CA7396F244C9606007E8487 /* ItemCollectionViewCell.xib */,
+				5CA73978244CACC5007E8487 /* MenuCollectionViewCell.swift */,
+				5CA73979244CACC5007E8487 /* MenuCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5CA73965244C9072007E8487 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5CA73972244C960D007E8487 /* ItemInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5CA73967244C9072007E8487 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5CA73976244C961B007E8487 /* ItemsCoreService+Extensions.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5CA7397C244CB2C9007E8487 /* DetailHero */ = {
+			isa = PBXGroup;
+			children = (
+				5CA7397D244CB2E2007E8487 /* DetailHeroViewController.swift */,
+				5CA7397F244CB2EA007E8487 /* DetailHero.storyboard */,
+			);
+			path = DetailHero;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CA73912244C8E55007E8487 /* TiketTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CA7393D244C8E56007E8487 /* Build configuration list for PBXNativeTarget "TiketTestApp" */;
+			buildPhases = (
+				BB7FCCB2F6B0408B419F0ADB /* [CP] Check Pods Manifest.lock */,
+				5CA7390F244C8E55007E8487 /* Sources */,
+				5CA73910244C8E55007E8487 /* Frameworks */,
+				5CA73911244C8E55007E8487 /* Resources */,
+				3CEBF071AFD65DB14EF2CCEA /* [CP] Embed Pods Frameworks */,
+				5CA73981244CD458007E8487 /* R Swift Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TiketTestApp;
+			productName = TiketTestApp;
+			productReference = 5CA73913244C8E55007E8487 /* TiketTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5CA73928244C8E56007E8487 /* TiketTestAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CA73940244C8E56007E8487 /* Build configuration list for PBXNativeTarget "TiketTestAppTests" */;
+			buildPhases = (
+				15893E74B38EB4B5EF8CF505 /* [CP] Check Pods Manifest.lock */,
+				5CA73925244C8E56007E8487 /* Sources */,
+				5CA73926244C8E56007E8487 /* Frameworks */,
+				5CA73927244C8E56007E8487 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CA7392B244C8E56007E8487 /* PBXTargetDependency */,
+			);
+			name = TiketTestAppTests;
+			productName = TiketTestAppTests;
+			productReference = 5CA73929244C8E56007E8487 /* TiketTestAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5CA73933244C8E56007E8487 /* TiketTestAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CA73943244C8E56007E8487 /* Build configuration list for PBXNativeTarget "TiketTestAppUITests" */;
+			buildPhases = (
+				8517F60C2EBC9D6353A4892B /* [CP] Check Pods Manifest.lock */,
+				5CA73930244C8E56007E8487 /* Sources */,
+				5CA73931244C8E56007E8487 /* Frameworks */,
+				5CA73932244C8E56007E8487 /* Resources */,
+				3ADD47A2F3C8EA26E5D5A2B5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CA73936244C8E56007E8487 /* PBXTargetDependency */,
+			);
+			name = TiketTestAppUITests;
+			productName = TiketTestAppUITests;
+			productReference = 5CA73934244C8E56007E8487 /* TiketTestAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CA7390B244C8E55007E8487 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Dedy Yuristiawan";
+				TargetAttributes = {
+					5CA73912244C8E55007E8487 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					5CA73928244C8E56007E8487 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 5CA73912244C8E55007E8487;
+					};
+					5CA73933244C8E56007E8487 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 5CA73912244C8E55007E8487;
+					};
+				};
+			};
+			buildConfigurationList = 5CA7390E244C8E55007E8487 /* Build configuration list for PBXProject "TiketTestApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CA7390A244C8E55007E8487;
+			productRefGroup = 5CA73914244C8E55007E8487 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CA73912244C8E55007E8487 /* TiketTestApp */,
+				5CA73928244C8E56007E8487 /* TiketTestAppTests */,
+				5CA73933244C8E56007E8487 /* TiketTestAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CA73911244C8E55007E8487 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA73923244C8E56007E8487 /* LaunchScreen.storyboard in Resources */,
+				5CA73971244C9606007E8487 /* ItemCollectionViewCell.xib in Resources */,
+				5CA7397B244CACC5007E8487 /* MenuCollectionViewCell.xib in Resources */,
+				5CA73920244C8E56007E8487 /* Assets.xcassets in Resources */,
+				5CA7391E244C8E55007E8487 /* Main.storyboard in Resources */,
+				5CA73980244CB2EA007E8487 /* DetailHero.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CA73927244C8E56007E8487 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CA73932244C8E56007E8487 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15893E74B38EB4B5EF8CF505 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TiketTestAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3ADD47A2F3C8EA26E5D5A2B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TiketTestApp-TiketTestAppUITests/Pods-TiketTestApp-TiketTestAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TiketTestApp-TiketTestAppUITests/Pods-TiketTestApp-TiketTestAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TiketTestApp-TiketTestAppUITests/Pods-TiketTestApp-TiketTestAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CEBF071AFD65DB14EF2CCEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TiketTestApp/Pods-TiketTestApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TiketTestApp/Pods-TiketTestApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TiketTestApp/Pods-TiketTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CA73981244CD458007E8487 /* R Swift Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "R Swift Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate --disable-input-output-files-validation \"$SRCROOT/R.generated.swift\"\n";
+		};
+		8517F60C2EBC9D6353A4892B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TiketTestApp-TiketTestAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB7FCCB2F6B0408B419F0ADB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TiketTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CA7390F244C8E55007E8487 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA7395C244C9058007E8487 /* KeyedValue.swift in Sources */,
+				5CA7397E244CB2E3007E8487 /* DetailHeroViewController.swift in Sources */,
+				5CA73956244C9058007E8487 /* UIString+Extension.swift in Sources */,
+				5CA7391B244C8E55007E8487 /* ViewController.swift in Sources */,
+				5CA73973244C960D007E8487 /* ItemInteractor.swift in Sources */,
+				5CA73975244C9614007E8487 /* Item.swift in Sources */,
+				5CA7395D244C9058007E8487 /* CoreService.swift in Sources */,
+				5CA73983244CD47F007E8487 /* R.generated.swift in Sources */,
+				5CA73958244C9058007E8487 /* UILabel+Extension.swift in Sources */,
+				5CA7395E244C9058007E8487 /* BaseInteractor.swift in Sources */,
+				5CA73977244C961B007E8487 /* ItemsCoreService+Extensions.swift in Sources */,
+				5CA73957244C9058007E8487 /* UIViewController+Extensions.swift in Sources */,
+				5CA7395F244C9058007E8487 /* Core.swift in Sources */,
+				5CA7397A244CACC5007E8487 /* MenuCollectionViewCell.swift in Sources */,
+				5CA7395B244C9058007E8487 /* PreferenceManager.swift in Sources */,
+				5CA73917244C8E55007E8487 /* AppDelegate.swift in Sources */,
+				5CA73919244C8E55007E8487 /* SceneDelegate.swift in Sources */,
+				5CA7395A244C9058007E8487 /* Reachability.swift in Sources */,
+				5CA73959244C9058007E8487 /* UIDevice+Extensions.swift in Sources */,
+				5CA73970244C9606007E8487 /* ItemCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CA73925244C8E56007E8487 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA7392E244C8E56007E8487 /* TiketTestAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CA73930244C8E56007E8487 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA73939244C8E56007E8487 /* TiketTestAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CA7392B244C8E56007E8487 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CA73912244C8E55007E8487 /* TiketTestApp */;
+			targetProxy = 5CA7392A244C8E56007E8487 /* PBXContainerItemProxy */;
+		};
+		5CA73936244C8E56007E8487 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CA73912244C8E55007E8487 /* TiketTestApp */;
+			targetProxy = 5CA73935244C8E56007E8487 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5CA7391C244C8E55007E8487 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CA7391D244C8E55007E8487 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CA73921244C8E56007E8487 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CA73922244C8E56007E8487 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CA7393B244C8E56007E8487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CA7393C244C8E56007E8487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CA7393E244C8E56007E8487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3AF2D68573944C67AAAD49C /* Pods-TiketTestApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52CL477F5B;
+				INFOPLIST_FILE = TiketTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parallaxspaces.TiketTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CA7393F244C8E56007E8487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E1E29DFE88E834D240073F9 /* Pods-TiketTestApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52CL477F5B;
+				INFOPLIST_FILE = TiketTestApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parallaxspaces.TiketTestApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5CA73941244C8E56007E8487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6AAB840428B867DB40C2CB7 /* Pods-TiketTestAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52CL477F5B;
+				INFOPLIST_FILE = TiketTestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parallaxspaces.TiketTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TiketTestApp.app/TiketTestApp";
+			};
+			name = Debug;
+		};
+		5CA73942244C8E56007E8487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E654CDD5E25B09E10A659FF /* Pods-TiketTestAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52CL477F5B;
+				INFOPLIST_FILE = TiketTestAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parallaxspaces.TiketTestAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TiketTestApp.app/TiketTestApp";
+			};
+			name = Release;
+		};
+		5CA73944244C8E56007E8487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D6A52E52DE442FC598B3323 /* Pods-TiketTestApp-TiketTestAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52CL477F5B;
+				INFOPLIST_FILE = TiketTestAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parallaxspaces.TiketTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TiketTestApp;
+			};
+			name = Debug;
+		};
+		5CA73945244C8E56007E8487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 180D85D84EAF043569E1BF87 /* Pods-TiketTestApp-TiketTestAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52CL477F5B;
+				INFOPLIST_FILE = TiketTestAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parallaxspaces.TiketTestAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TiketTestApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CA7390E244C8E55007E8487 /* Build configuration list for PBXProject "TiketTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CA7393B244C8E56007E8487 /* Debug */,
+				5CA7393C244C8E56007E8487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CA7393D244C8E56007E8487 /* Build configuration list for PBXNativeTarget "TiketTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CA7393E244C8E56007E8487 /* Debug */,
+				5CA7393F244C8E56007E8487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CA73940244C8E56007E8487 /* Build configuration list for PBXNativeTarget "TiketTestAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CA73941244C8E56007E8487 /* Debug */,
+				5CA73942244C8E56007E8487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CA73943244C8E56007E8487 /* Build configuration list for PBXNativeTarget "TiketTestAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CA73944244C8E56007E8487 /* Debug */,
+				5CA73945244C8E56007E8487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CA7390B244C8E55007E8487 /* Project object */;
+}

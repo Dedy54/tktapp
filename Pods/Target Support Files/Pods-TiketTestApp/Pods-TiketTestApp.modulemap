@@ -1,0 +1,6 @@
+framework module Pods_TiketTestApp {
+  umbrella header "Pods-TiketTestApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
